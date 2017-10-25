@@ -271,7 +271,8 @@ endfunction
 
 " FUNCTION: Path.edit() {{{1
 function! s:Path.edit()
-    exec "edit " . self.str({'format': 'Edit'})
+    exec "NERDTreeToggle"
+    exec "tabedit " . self.str({'format': 'Edit'})
 endfunction
 
 " FUNCTION: Path.extractDriveLetter(fullpath) {{{1
